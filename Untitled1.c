@@ -7,10 +7,10 @@ int main(int argc, const char* argv[])
     char b[100];
     char lat[9],lon[9],spe[6],course[6],day[7],time[7], satellite[3],altituden[5];//lat纬度 lon经度 spe速度 course航向 day年月日 time时间
     FILE *fr,*fw;
-    int i,ces=1;//timebig年月日循环变量 timesmile时间循环变量
+    int i,timesmile[7],timebig[7];//timebig年月日循环变量 timesmile时间循环变量
     int numbig,numsm;//年月日转换变量
     double speed;
-    fr = fopen("C:\\Users\\asus\\Desktop\\gps\\GPS170510.log", "r+");
+    fr = fopen("C:\\Users\\asus\\Desktop\\gps\\gpsandfile\\GPS170510.log", "r+");
     if(fr==NULL)
         printf("fr文件打开失败\n");
 
